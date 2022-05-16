@@ -14,6 +14,17 @@ body{
     background-color: lightpink;
     min-width: 550px;
 }
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*   MAIN  *-*-*-*-*-*-*-*-*-*-*-*/
+
 main{
     background-color: lightblue;
     width: 100%;
@@ -21,18 +32,106 @@ main{
     display: flex;
 }
 
-.sx-nav{
-    background-color: bisque;
+/*----------------------------BARRA SINISTRA-------------- */
+.sx-bar{
+    background-color: black;
     width: 250px;
     overflow-y: hidden;
+    position: relative;
 }
 
+
+
+/* ------------------------------logo */
+.logo{
+    background-color: black;
+    height: 80px;
+    color: white;
+}
+
+
+.y-mobile{
+    display: none;
+}
+
+/*------------------------------utility */
+
+.utility, .bar-bottom .ul{
+    display: flex;
+    align-items: center
+}
+
+.sx-bar ul li a img {
+    height: 25px;
+}
+
+.utility li{
+    padding-left: 20px;
+}
+
+.utility li:hover{
+    border-left: 1px solid greenyellow;
+    
+
+}
+
+.utility li,a:hover{
+    color: white;
+}
+
+
+/*-------------------------------playlists */
+
+.playlists{
+    padding-left: 20px;
+
+}
+
+.playlists div{
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.playlists li{
+    line-height: 30px;
+}
+
+/*-----------------------------bar-bottom */
+.bar-bottom{
+    padding-left: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.bar-bottom hr{
+    width: 205px;
+    margin: 8px 0;
+}
+
+
+
+/* ------------------------------CONTENT------------------*/
 .content{
     background-color: lightgray;
     width: calc(100% - 250px);
     overflow-y: auto;
     padding-top: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
@@ -53,4 +152,34 @@ footer{
     width: calc( 100% - 250px );
     text-align: right;
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /* logo */
+    .n-mobile{
+        display: none;
+
+    }
+    .y-mobile{
+    display: block;
+    }
+
+    /* utility */
+
+
+
+
 }
