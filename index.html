@@ -21,8 +21,12 @@
             <div class="sx-bar">
 
                 <div class="logo">
-                    <div class="n-mobile">big logo</div>
-                    <div class="y-mobile">small logo</div>
+                    <div class="n-mobile">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="y-mobile">
+                       <img src="img/logo-small.svg" alt="">
+                    </div>
                 
                 </div>
 
@@ -47,11 +51,19 @@
                     <div>
                         PLAYLIST
                     </div>
-                    <ul>
-                        <li>
-                           <span><a href="#">+</a></span>
-                           <span><a href="#"> crea playlist</a></span>
-                        </li>
+                    
+                    <div class=" new">
+                        <a href="#"><span class="add"> + </span></a>
+
+                        <a href="#"> crea playlist</a> 
+                    </div>
+
+                    <ul class="overflow-ul">
+                        <li><a href="#"> crea playlist</a></li>
+                        <li><a href="#"> crea playlist</a></li>
+                        <li><a href="#"> crea playlist</a></li>
+                        <li><a href="#"> crea playlist</a></li>
+                        <li><a href="#"> crea playlist</a></li>
                         <li><a href="#"> crea playlist</a></li>
                         <li><a href="#"> crea playlist</a></li>
                         <li><a href="#"> crea playlist</a></li>
@@ -64,15 +76,28 @@
                 <div class="bar-bottom">
                     
                     <ul>
-                        <li>
-                            <span><a href="#"><img src="img/download.svg" alt="istaller"></a></span>
-                            <span class="n-mobile"><a href="#"> Istalla app</a></span>                    
+                        <li class="flex">
+                            <a class="dw" href="#">
+                                <img src="img/download.svg" alt="istaller">
+                            </a>
+                            
+                            <span class="n-mobile">
+                                <a href="#"> Istalla app</a>
+                            </span>                    
                         </li>
-                        <hr class="n-mobile">
-                        <li>
-                            <span><a href="#"><img src="img/profile.svg" alt="user"></a></span>
-                            <span class="n-mobile"><a href="#"> John Doe</a></span>                    
 
+                        <hr class="n-mobile">
+
+                        <li class="flex">
+                            <a href="#">
+                                <span class="circle">
+                                    <img src="img/profile.svg" alt="user">
+                                </span>
+                            </a>
+                                                 
+                            <span class="n-mobile">
+                                <a href="#"> John Doe</a>
+                            </span>                    
                         </li>
                     </ul>
 
@@ -81,7 +106,61 @@
             
             <!-- content -->
             <div class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam debitis accusamus iusto inventore voluptate laudantium dolorum mollitia! Quisquam sunt iusto distinctio molestiae vel impedit nobis tempore voluptate? Quasi, repellendus.
+                <section class="cont-recently">
+                    <h2>Recently Played</h2>
+
+                    <div class="recently">
+                        <div class="card">
+                            <div class="album">
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <h4>Subtitle</h4>
+
+                            
+                        </div>
+                        <div class="card">
+                            <div class="album">
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="album">
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                    <section class="cont-recently">
+                        <h2>Creato per John Doe</h2>
+    
+                        <div class="recently">
+                            <div class="card">
+                                <div class="album">
+                                    <img src="img/stranger.jpeg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="card">
+                                <div class="album">
+                                    <img src="img/stranger.jpeg" alt="">
+                                </div>
+                                
+                            </div>
+    
+                            
+                        </div>
+    
+                    
+                </section>
+                
+
+
+
+
             </div>
 
 
@@ -98,7 +177,7 @@
 
 
 
-            
+
         </main>
 
         <!-- FOOTER -->

@@ -23,6 +23,11 @@ a{
     text-decoration: none;
     color: gray;
 }
+
+.flex{
+    display: flex;
+    align-items: center;
+}
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*   MAIN  *-*-*-*-*-*-*-*-*-*-*-*/
 
 main{
@@ -40,7 +45,10 @@ main{
     position: relative;
 }
 
-
+.sx-bar ul li a img {
+    height: 25px;
+    /* opacity: 0.5; */
+}
 
 /* ------------------------------logo */
 .logo{
@@ -49,6 +57,10 @@ main{
     color: white;
 }
 
+.logo img{
+   padding: 10px 0 10px 20px;
+    max-width: 60%;
+}
 
 .y-mobile{
     display: none;
@@ -56,13 +68,13 @@ main{
 
 /*------------------------------utility */
 
+.utility{
+    height: 100px;
+}
+
 .utility, .bar-bottom .ul{
     display: flex;
     align-items: center
-}
-
-.sx-bar ul li a img {
-    height: 25px;
 }
 
 .utility li{
@@ -71,12 +83,11 @@ main{
 
 .utility li:hover{
     border-left: 1px solid greenyellow;
-    
-
 }
 
-.utility li,a:hover{
+a:hover{
     color: white;
+    /* opacity: unset; */
 }
 
 
@@ -84,7 +95,7 @@ main{
 
 .playlists{
     padding-left: 20px;
-
+    height: calc( 100% - 260px );
 }
 
 .playlists div{
@@ -94,16 +105,63 @@ main{
     padding-bottom: 10px;
 }
 
+.new{
+    display: flex;
+    align-items: center;
+}
+
+.add{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: black;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.overflow-ul{
+    height: 80%;
+    overflow-y: auto;
+
+}
+
 .playlists li{
     line-height: 30px;
 }
 
 /*-----------------------------bar-bottom */
 .bar-bottom{
+
     padding-left: 20px;
     position: absolute;
     bottom: 10px;
     left: 0px;
+    height: 80px;
+}
+
+.dw{
+    padding-right: 10px;
+    
+}
+
+.dw img{
+    margin-left: -4px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.circle img{
+    width: 70%;
 }
 
 .bar-bottom hr{
@@ -121,10 +179,30 @@ main{
     padding-top: 100px;
 }
 
+.recently{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
+.card{
+    width: calc((100% /6 ) - 10px);
+    text-align: center;
+    /* background-color: yellow; */
 
+}
 
+.album{
+    /* background-color: blue; */
+    padding: 5px;
+}
 
+.album img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 
@@ -171,11 +249,15 @@ footer{
     /* logo */
     .n-mobile{
         display: none;
-
     }
     .y-mobile{
     display: block;
     }
+
+    .logo img{
+    padding: 10px 0 10px 20px;
+    max-width: 20%;
+}
 
     /* utility */
 
