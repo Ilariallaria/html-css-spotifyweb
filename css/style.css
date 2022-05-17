@@ -293,6 +293,47 @@ footer{
     overflow: hidden;
 }
 
+.foot-cont{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.f-sx{
+    background-color: lightpink;
+    width: 250px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.f-central{
+    background-color: blue;
+    width: calc(100% - 500px);
+    text-align: center;
+}
+
+.f-dx{
+    background-color: violet;
+    width: 250px;
+    padding: 0 10px;
+
+}
+
+
+
+
+
+
+
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*  BANNER  *-*-*-*-*-*-*-*-*-*-*-*/
 
@@ -305,8 +346,6 @@ footer{
     height: 80px;
     width: calc( 100% - 250px );
     text-align: right;
-
-    
 }
 
 .btn{
@@ -325,22 +364,13 @@ footer{
 }
 
 
-
-
-
-
-
-
 @media screen and (max-width: 878px){
     
 /* content */
 .card{
     width: calc(100% / 4);
     text-align: center;
-
 }
-
-
 }
 
 
@@ -350,10 +380,7 @@ footer{
     width: calc(100% / 2);
     text-align: center;
 }
-
 }
-
-
 
 
 @media screen and (max-width: 552px) {
@@ -384,7 +411,6 @@ footer{
 .card{
     width: calc(100% / 2);
     text-align: center;
-    /* background-color: yellow; */
 
 }
 
@@ -392,7 +418,5 @@ footer{
 
 .banner{
     width: calc( 100% - 70px );
-
 }
-
 }
