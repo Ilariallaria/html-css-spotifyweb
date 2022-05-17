@@ -172,7 +172,43 @@ a:hover{
 
 
 
-/* ------------------------------CONTENT------------------*/
+/* ----------------------------------CONTENTS---------------*/
+
+/*------------------------ nav */
+
+.nav-cont{
+    height: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    color: grey;
+    text-align: center;
+}
+
+.menu li a{
+    font-size: 12px;
+}
+
+.menu li a:hover{
+    border-bottom: 1px solid greenyellow;
+}
+
+
+/* ------------------------sections */
+
 .content{
     background-color: #141922;
     width: calc(100% - 250px);
@@ -180,36 +216,43 @@ a:hover{
     padding-top: 100px;
 }
 
-.content h2{
+h2{
     color: white;
+    padding-top: 25px;
 }
-.sezioni{
+
+h4{
+    color: white;
+    padding-top: 10px;
+}
+
+h5{
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.sezione{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .card{
     width: calc(100% /6 );
     text-align: center;
-    /* background-color: yellow; */
-
 }
 
 .play{
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
-   
 }
 
 
 .album{
-    /* background-color: blue; */
     padding: 5px;
     position: relative;
-
 }
 
 .play{
@@ -237,18 +280,12 @@ a:hover{
     display: block;
 }
 
-.card h4{
-    color: white;
-}
-
-.card h5{
-    color: grey;
+.cirle-image{
+    border-radius: 50%;
 }
 
 
-
-
-
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*   FOOTER *-*-*-*-*-*-*-*-*-*-*-*/
 footer{
     background-color: lightgreen;
     width: 100%;
@@ -256,18 +293,43 @@ footer{
     overflow: hidden;
 }
 
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*  BANNER  *-*-*-*-*-*-*-*-*-*-*-*/
+
 .banner{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 20px;
     position: fixed;
     top: 0;
     right: 0;
     height: 80px;
     width: calc( 100% - 250px );
     text-align: right;
+
     
 }
+
+.btn{
+    border: solid 1px white;
+    border-radius: 25px;
+    padding: 12px 50px;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 15px;
+}
+
+.btn a{
+    color: white
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 878px){
     
