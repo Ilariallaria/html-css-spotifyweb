@@ -62,6 +62,7 @@ main{
     max-width: 60%;
 }
 
+
 .y-mobile{
     display: none;
 }
@@ -173,13 +174,16 @@ a:hover{
 
 /* ------------------------------CONTENT------------------*/
 .content{
-    background-color: lightgray;
+    background-color: #141922;
     width: calc(100% - 250px);
     overflow-y: auto;
     padding-top: 100px;
 }
 
-.recently{
+.content h2{
+    color: white;
+}
+.sezioni{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -187,15 +191,44 @@ a:hover{
 }
 
 .card{
-    width: calc((100% /6 ) - 10px);
+    width: calc(100% /6 );
     text-align: center;
     /* background-color: yellow; */
 
 }
 
+.play{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+   
+}
+
+
 .album{
     /* background-color: blue; */
     padding: 5px;
+    position: relative;
+
+}
+
+.play{
+    background-color: transparent;
+    color: transparent;
+    position: absolute;
+    top: 25%;    
+    left: 0;
+    font-size: 70px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: color 1s ease-in;
+
+}
+
+.play:hover{
+    color: rgba(255, 255, 255, 0.8);
+    
 }
 
 .album img{
@@ -204,9 +237,13 @@ a:hover{
     display: block;
 }
 
+.card h4{
+    color: white;
+}
 
-
-
+.card h5{
+    color: grey;
+}
 
 
 
@@ -232,19 +269,32 @@ footer{
     
 }
 
+@media screen and (max-width: 878px){
+    
+/* content */
+.card{
+    width: calc(100% / 4);
+    text-align: center;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 639px){
+/* content */
+.card{
+    width: calc(100% / 2);
+    text-align: center;
+}
+
+}
 
 
 
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 552px) {
 
     /* logo */
     .n-mobile{
@@ -254,14 +304,33 @@ footer{
     display: block;
     }
 
-    .logo img{
+    .s-logo{
     padding: 10px 0 10px 20px;
     max-width: 20%;
 }
 
-    /* utility */
+/* sx-bar */
 
+.sx-bar{
+    width: 70px;
 
+}
+.content {
+    width: calc(100% - 70px);
+}
+/* content */
+.card{
+    width: calc(100% / 2);
+    text-align: center;
+    /* background-color: yellow; */
 
+}
+
+/* banner */
+
+.banner{
+    width: calc( 100% - 70px );
+
+}
 
 }
