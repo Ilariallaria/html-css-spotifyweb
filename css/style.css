@@ -302,6 +302,7 @@ footer{
     align-items: center;
 }
 
+/* conna sinistra */
 .f-sx{
     background-color: lightpink;
     color: white;
@@ -339,14 +340,67 @@ footer{
     font-size: 11px;
 }
 
-/* .sx-icons {
+.sx-icons {
     justify-self: flex-end;
-} */
+}
 
+/* colonna centrale */
 .f-central{
     background-color: blue;
     width: calc( ( (100% - 250px ) / 4) * 3);
+}
+
+.central-icon{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.central-icon span{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+#play-icon {
+    font-size: 30px;
+}
+
+.timeline{
     text-align: center;
+}
+
+.timeline span{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+.bar-box {
+    display: inline-block;
+    width: 70%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 25px;
+    position: relative;
+} 
+
+.play-bar:hover{
+    background-color: yellowgreen;
+}
+
+.play-bar{
+    display: inline-block;
+    width: 20%;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 .f-dx{
