@@ -243,6 +243,7 @@ a:hover{
 .content{
     padding-left: 20px;
 }
+
 /*------------------------ nav */
 
 .nav-cont{
@@ -253,7 +254,6 @@ a:hover{
 .nav{
     height: 50px;
     width: 100%;
-    /* background-color: yellow; */
 }
 
 .menu ul{
@@ -262,13 +262,14 @@ a:hover{
     flex-wrap: wrap;
 }
 
-.menu li{
+
+.menu a{
     color: grey;
     text-align: center;
 }
 
-.menu li:hover{
-    border-bottom: 1px solid greenyellow;
+.menu a:hover{
+    color: white;
 }
 
 
