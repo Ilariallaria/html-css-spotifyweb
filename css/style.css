@@ -17,11 +17,22 @@ body{
 
 li{
     list-style-type: none;
+    color: gray;
+    font-size: 13px;
 }
 
-a{
+span{
     text-decoration: none;
     color: gray;
+    font-size: 13px;
+}
+
+.sx-bar li:hover{
+    color: white
+}
+
+.sx-bar span:hover{
+    color: white;
 }
 
 .flex{
@@ -45,7 +56,7 @@ main{
     position: relative;
 }
 
-.sx-bar ul li a img {
+.sx-bar ul li span img {
     height: 25px;
     /* opacity: 0.5; */
 }
@@ -198,11 +209,8 @@ a:hover{
     text-align: center;
 }
 
-.menu li a{
-    font-size: 12px;
-}
 
-.menu li a:hover{
+.menu li:hover{
     border-bottom: 1px solid greenyellow;
 }
 
@@ -339,10 +347,21 @@ footer{
     color: grey;
     font-size: 11px;
 }
-
-.sx-icons {
-    justify-self: flex-end;
+#song:hover{
+    text-decoration: underline;
 }
+.sx-icons {
+    /* justify-self: flex-end; */
+    color: grey;
+}
+
+.sx-icons div:hover{
+    color: white;
+
+}
+
+
+
 
 /* colonna centrale */
 .f-central{
@@ -354,7 +373,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: white;
+    /* color: white; */
     padding-top: 10px;
 }
 
@@ -362,10 +381,15 @@ footer{
     padding: 0 10px;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 #play-icon {
     font-size: 30px;
+}
+
+#play-icon:hover{
+    transform: scale(1.2);
 }
 
 .timeline{
