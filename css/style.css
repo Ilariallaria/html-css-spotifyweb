@@ -21,18 +21,12 @@ li{
     font-size: 13px;
 }
 
-span{
+a{
     text-decoration: none;
+}
+span{
     color: gray;
     font-size: 13px;
-}
-
-.sx-bar li:hover{
-    color: white
-}
-
-.sx-bar span:hover{
-    color: white;
 }
 
 .flex{
@@ -48,6 +42,37 @@ main{
     display: flex;
 }
 
+/*---------------------------------BANNER-------------- */
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: calc( 100% - 250px );
+    text-align: right;
+}
+
+.btn{
+    border: solid 1px white;
+    border-radius: 25px;
+    padding: 12px 50px;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn a{
+    color: white
+}
+
 /*----------------------------BARRA SINISTRA-------------- */
 .sx-bar{
     background-color: black;
@@ -58,8 +83,19 @@ main{
 
 .sx-bar ul li span img {
     height: 25px;
-    /* opacity: 0.5; */
+    opacity: 0.5;
 }
+
+.sx-bar li:hover{
+    color: white
+}
+.sx-bar ul li span img:hover {
+    opacity: 1;
+}
+/* .sx-bar span:hover{
+    color: white;
+} */
+
 
 /* ------------------------------logo */
 .logo{
@@ -209,7 +245,6 @@ a:hover{
     text-align: center;
 }
 
-
 .menu li:hover{
     border-bottom: 1px solid greenyellow;
 }
@@ -298,7 +333,7 @@ h5{
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*   FOOTER *-*-*-*-*-*-*-*-*-*-*-*/
 footer{
-    background-color: lightgreen;
+    background-color: black;
     width: 100%;
     height: 100px;
     overflow: hidden;
@@ -312,17 +347,16 @@ footer{
 
 /* conna sinistra */
 .f-sx{
-    background-color: lightpink;
     color: white;
-    width: 250px;
-    padding: 0 10px;
+    width: calc(100%  / 4);
+    padding: 0 0 0 10px;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .box{
-    border: 1px solid white;
     width: 60px;
     height: 60px;
 }
@@ -345,7 +379,7 @@ footer{
 #song{
     font-weight: bold;
     color: grey;
-    font-size: 11px;
+    font-size: 9px;
 }
 #song:hover{
     text-decoration: underline;
@@ -353,6 +387,7 @@ footer{
 .sx-icons {
     /* justify-self: flex-end; */
     color: grey;
+    font-size: 13px;
 }
 
 .sx-icons div:hover{
@@ -365,15 +400,13 @@ footer{
 
 /* colonna centrale */
 .f-central{
-    background-color: blue;
-    width: calc( ( (100% - 250px ) / 4) * 3);
+    width: calc( ( 100%  / 4) * 3);
 }
 
 .central-icon{
     display: flex;
     justify-content: center;
     font-size: 20px;
-    /* color: white; */
     padding-top: 10px;
 }
 
@@ -388,7 +421,7 @@ footer{
     font-size: 30px;
 }
 
-#play-icon:hover{
+.central-icon span:hover{
     transform: scale(1.2);
 }
 
@@ -424,50 +457,54 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
+/* colonna destra */
 .f-dx{
-    background-color: goldenrod;
-    width: calc((100% - 250px) / 4);
+    width: calc(100%  / 4);
     padding: 0 10px;
-
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
 }
+ .f-dx span{
+     padding-left: 5px;
+     padding-right: 5px;
+ }
 
-
-
-
-
-
-
-
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*  BANNER  *-*-*-*-*-*-*-*-*-*-*-*/
-
-.banner{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 80px;
-    width: calc( 100% - 250px );
-    text-align: right;
-}
-
-.btn{
-    border: solid 1px white;
+.vol-box {
+    display: inline-block;
+    width: 50%;
+    height: 5px;
+    background-color: grey;
     border-radius: 25px;
-    padding: 12px 50px;
-    width: fit-content;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 15px;
+    position: relative;
+} 
+
+.vol-bar:hover{
+    background-color: yellowgreen;
 }
 
-.btn a{
-    color: white
+.vol-bar{
+    display: inline-block;
+    width: 20%;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 878px){
@@ -477,14 +514,25 @@ footer{
     width: calc(100% / 4);
     text-align: center;
 }
+/* footer sx */
+#artist{
+    font-size: 10px;
 }
-
+ #song{
+    font-size: 8px;
+}
+}
 
 @media screen and (max-width: 639px){
 /* content */
 .card{
     width: calc(100% / 2);
     text-align: center;
+}
+/* footer sx */
+.box{
+    display: none;
+    /* consiglio di Ale */
 }
 }
 
