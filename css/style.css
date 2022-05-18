@@ -92,9 +92,9 @@ main{
 .sx-bar ul li span img:hover {
     opacity: 1;
 }
-/* .sx-bar span:hover{
+.sx-bar span:hover{
     color: white;
-} */
+}
 
 
 /* ------------------------------logo */
@@ -146,16 +146,18 @@ a:hover{
     height: calc( 100% - 260px );
 }
 
-.playlists div{
+#set{
     font-weight: bold;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
 }
 
 .new{
     display: flex;
     align-items: center;
+    color: black;
+    padding: 10px 0;
+    
 }
 
 .add{
@@ -165,9 +167,21 @@ a:hover{
     justify-content: center;
     align-items: center;
     background-color: grey;
-    color: black;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 10px;
+    color: black;
+}
+
+.add div{
+    color:black;
+}
+
+.add:hover{
+    background-color: white;
+    color: black
+}
+.white:hover{
+    color: white;
 }
 .overflow-ul{
     height: 80%;
@@ -191,7 +205,6 @@ a:hover{
 
 .dw{
     padding-right: 10px;
-    
 }
 
 .dw img{
@@ -202,6 +215,7 @@ a:hover{
     height: 20px;
     border-radius: 50%;
     border: 1px solid grey;
+    background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,6 +229,11 @@ a:hover{
 .bar-bottom hr{
     width: 205px;
     margin: 8px 0;
+}
+
+.user div:nth-of-type(2){
+    font-weight: bold;
+    color: white;
 }
 
 
